@@ -1,17 +1,22 @@
-
 $(document).ready(function() {
-    
-    $('nav a').on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
-            });
-        }
+    let currentIndex = 0;
+    const slides = $('.slide');
+    const totalSlides = slides.length;
+  
+    function showSlide(index) {
+      slides.removeClass('active').eq(index).addClass('active');
+    }
+  
+    $('.next').click(function() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
     });
-});
+  
+    $('.prev').click(function() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      showSlide(currentIndex);
+    });
+  
+    showSlide(currentIndex);
+  });
+  

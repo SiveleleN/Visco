@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visco Investment Management</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Visio Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#difference">The Visio Difference</a></li>
-                <li><a href="#team">Meet the Visio Team</a></li>
-                <li><a href="#funds">Our Funds and Investments</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <img src="hero.jpg" alt="Hero Image">
-        <div class="hero-text">
-            <h1>LOOK BEYOND THE ORDINARY</h1>
-        </div>
-    </section>
-    
-    <section id="difference">
-        <h2>The Visio Difference</h2>
-       
-    </section>
-    
-    <section id="team">
-        <h2>Meet the Visio Team</h2>
-       
-    </section>
-    
-    <section id="funds">
-        <h2>Our Funds and Investments</h2>
-       
-    </section>
+  <header>
+    <div class="container">
+        <h1><a href="#"><img src="https://cdn-thumbs.imagevenue.com/d8/96/47/ME18HI9Z_t.png" alt="Visio Logo" class="logo"></a></h1>
+        <span>☰</span>
+    </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2024 Visio Investment Management</p>
-    </footer>
+  <section class="hero">
+    <div class="container">
+      <div class="slide-navigation">
+        <button class="prev">❮</button>
+        <div class="hero-slides">
+            <div class="slide active">
+              <img src="https://cdn-thumbs.imagevenue.com/fb/5d/1c/ME18HKS8_t.jpg" alt="Hero Image 1">
+            </div>
+            <div class="slide">
+              <img src="https://cdn-thumbs.imagevenue.com/83/1e/67/ME18HKSU_t.jpg" alt="Hero Image 2">
+            </div>
+            <div class="slide">
+              <img src="https://cdn-thumbs.imagevenue.com/d3/24/89/ME18HKSZ_t.jpg" alt="Hero Image 3">
+            </div>
+        </div>
+        <button class="next">❯</button>
+      </div>
+      <div class="hero-content">
+        <h2>LOOK BEYOND THE ORDINARY</h2>
+        <p>Visio is an investment management firm initially founded by Patrice Moyal in 2003. The nimble, highly focused and dynamic team manage assets across listed strategies for a diversified client base that includes some of the world's largest and most sophisticated investors.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service">
+          <h3><span class="icon">></span>The Visio Difference</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, cumque.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <h3><span class="icon">></span>Meet The Visio Team</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, cumque.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service">
+          <h3><span class="icon">></span>Our Funds and Investments</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, cumque.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Visio. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
